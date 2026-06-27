@@ -16,11 +16,24 @@
             justify-content: space-evenly
         }
 
+        div.middle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div.middleimg {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
         div.down {
             filter: grayscale(100%);
             display: flex;
             gap: 20px;
-            justify-content: space-evenly;
+            justify-content: space-between;
+            align-items: center;
         }
     </style>
 </head>
@@ -39,6 +52,8 @@
         </div>
     </div>
     <h1>Navigating the digital landscape for success</h1>
+
+    <img class="middleimg" src="images/macro.png" alt="Macro">
     <div class="down">
         <div><img src="images/amazon.png" alt="Amazon" width="100"></div>
         <div><img src="images/dnilllle.png" alt="Dilllle" width="100"></div>
