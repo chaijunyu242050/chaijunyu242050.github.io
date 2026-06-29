@@ -10,57 +10,135 @@
 
         body {
             font-family: "Space Grotesk", sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #191A23
+        }
+
+        div.container {
+            width: 1200px;
+            margin: auto;
         }
 
         div.up {
-            justify-content: space-evenly
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 35px 0;
+        }
+
+        div.upimg {
+            width: 170px;
+        }
+
+        div.choice {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            font-size: 16px;
+        }
+
+        button.button {
+            padding: 15px 28px;
+            border: 1px solid #191A23;
+            border-radius: 10px;
+            background: white;
+            font-family: "Space Grotesk", sans-serif
         }
 
         div.middle {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             align-items: center;
+            margin-top: 30px;
+        }
+
+        div.middleleft {
+            width: 48%;
+        }
+
+        div.head {
+            font-size: 64px;
+            font-weight: 700;
+            line-height: 1.15;
+        }
+
+        div.par {
+            margin-top: 35px;
+            width: 470px;
+            line-height: 1.8;
+            font-size: 18px;
+        }
+
+        button.book {
+            margin-top: 35px;
+            padding: 18px 35px;
+            background: #191A23;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-family: "Space Grotesk", sans-serif
         }
 
         div.middleimg {
-            width: 100%;
-            height: auto;
-            display: block;
+            width: 45%;
+            text-align: right;
         }
 
         div.down {
-            filter: grayscale(100%);
             display: flex;
             gap: 20px;
             justify-content: space-between;
             align-items: center;
+            margin-top: 80px;
+            margin-bottom: 40px;
+        }
+
+        div.downimg {
+            height: 35px;
+            opacity: 0.8;
+            filter: grayscale(100%);
         }
     </style>
 </head>
 
 <body>
-    <div class="up">
-        <div><img src="images/lgo.png" alt="Positivus" width="200"></div>
-        <div>
-            <p>About us
-                Services
-                Use Cases
-                Pricing
-                Blog
-                Request a quote
-            </p>
+    <div class="container">
+        <div class="up">
+            <div class="upimg"><img src="images/lgo.png" alt="Positivus" width="100%"></div>
+            <div class="choice">
+                <p>About us</p>
+                <p>Services</p>
+                <p>Use Cases</p>
+                <p>Pricing</p>
+                <p>Blog</p>
+                <button class="button">Request a quote</button>
+            </div>
         </div>
-    </div>
-    <h1>Navigating the digital landscape for success</h1>
+        
+        <div class="middle">
+            <div class="middleleft">
+                <div class="head">
+                    Navigating the digital landscape for success
+                </div>
+                <div class="par">
+                    <p>Our digital marketing agency helps businesses grow and succeed online through a range of
+                        services including SEO, PPC, social media marketing, and content creation.</p>
+                </div>
+                <button class="book">Book a consultation</button>
+            </div>
+            <div class="middleimg"><img src="images/macro.png" alt="Macro" width="100%"></div>
+        </div>
 
-    <img class="middleimg" src="images/macro.png" alt="Macro">
-    <div class="down">
-        <div><img src="images/amazon.png" alt="Amazon" width="100"></div>
-        <div><img src="images/dnilllle.png" alt="Dilllle" width="100"></div>
-        <div><img src="images/hubspot.png" alt="HubSpot" width="100"></div>
-        <div><img src="images/notion.png" alt="Notion" width="100"></div>
-        <div><img src="images/netflix.png" alt="Netflix" width="100"></div>
-        <div><img src="images/zoom.png" alt="Zoom" width="100"></div>
+        <div class="down downimg">
+            <div><img src="images/amazon.png" alt="Amazon" width="100"></div>
+            <div><img src="images/dnilllle.png" alt="Dilllle" width="100"></div>
+            <div><img src="images/hubspot.png" alt="HubSpot" width="100"></div>
+            <div><img src="images/notion.png" alt="Notion" width="100"></div>
+            <div><img src="images/netflix.png" alt="Netflix" width="100"></div>
+            <div><img src="images/zoom.png" alt="Zoom" width="100"></div>
+        </div>
     </div>
 </body>
 
