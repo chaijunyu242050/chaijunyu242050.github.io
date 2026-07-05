@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* Navbar */
+.navbar{
+    margin:25px auto;
+    background:white;
+    padding:18px 35px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo img{
+    height:40px;
+}
+
+.menu{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    font-size:15px;
+}
+
+.menu .active{
+    color:#ff6b3d;
+    font-weight:bold;
+}
+
+.right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.phone{
+    font-weight:600;
+}
+
+button{
+    background:#ff6b3d;
+    color:white;
+    border:none;
+    padding:12px 24px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.hamburger{
+    display:none;
+    font-size:28px;
+    cursor:pointer;
+}
+
+/* ================= Tablet ================= */
+
+@media(max-width:992px){
+
+.menu{
+    display:none;
+}
+
+button{
+    display:none;
+}
+
+.hamburger{
+    display:block;
+}
+
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:576px){
+
+.navbar{
+    padding:15px 20px;
+}
+
+.phone{
+    display:none;
+}
+
+.logo img{
+    height:34px;
+}
+
+}
+    </style>
+</head>
+<body>
+    <header>
+    <nav class="navbar">
+
+        <div class="logo">
+            <img src="images/logo.png" alt="logo">
+        </div>
+
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a class="active" href="#">Services</a></li>
+            <li><a href="#">Work</a></li>
+            <li><a href="#">Project Details</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="right">
+            <span class="phone">📞 555-123-4567</span>
+            <button>Contact</button>
+
+            <div class="hamburger">
+                ☰
+            </div>
+        </div>
+
+    </nav>
+</header>
+
+</body>
+</html>
