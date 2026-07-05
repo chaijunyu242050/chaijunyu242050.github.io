@@ -17,25 +17,24 @@
         div.container {
             display: flex;
             margin: auto;
-            padding: 18px 35px;
+            padding: 13px 45px;
             justify-content: space-between;
             align-items: center;
         }
 
-        div.left {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 10px;
+        div.left img {
+            height: 35px;
+            width: auto;
         }
 
         div.middle {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            font-size: 17px;
+            font-size: 15px;
             gap: 35px;
             font-weight: 600;
+            margin-right: -46px;
         }
 
         div.select {
@@ -44,46 +43,77 @@
 
         div.right {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            gap: 8px;
-            font-weight: 600;
+            gap: 20px;
+            font-weight: bold;
+            margin-right: 35px;
         }
 
-        div.icon {
-            width: 18px;
-            height: 18px;
-            object-fit: contain;
+        div.telephone img {
+            width: 20px;
+            height: 20px;
+            margin-right: -13px;
         }
 
-        button {
+        div.right button {
             background-color: #f9612b;
             color: white;
             border: none;
-            padding: 12px 24px;
+            padding: 11px 14px;
             border-radius: 6px;
-            font-size: 16px;
+            font-size: 14px;
+
         }
 
         div.humburger {
-            display: none
+            display: none;
+            width: 35px;
+            height: 35px;
         }
 
         /* middle size */
-        @media screen and (max-width: 964px) {
+        @media screen and (max-width: 1280px) {
+            div.container {
+                padding: 13px 15px;
+            }
+
             div.humburger {
                 display: flex;
             }
 
-            div.choice {
+            div.middle {
                 display: none;
+            }
+
+            div.telephone {
+                margin-right: -12px;
+            }
+
+            div.telephone img {
+                margin-right: 0px;
+            }
+
+            button {
+                display: none;
+            }
+
+            div.right {
+                margin-right: 0px;
             }
         }
 
         /* small size */
-        @media screen and (max-width: 385.6px) {
+        @media screen and (max-width: 768px) {
+            div.container {
+                padding: 13px 10px;
+            }
+
             div.telephone {
                 display: none;
+            }
+
+            div.right {
+                margin-right: -5px;
             }
         }
     </style>
@@ -91,7 +121,7 @@
 
 <body>
     <div class="container">
-        <div class="left"><img src="images/logo.png" width="45%"></div>
+        <div class="left"><img src="images/logo.png"></div>
 
         <div class="middle">
             <div>Home</div>
@@ -102,10 +132,10 @@
         </div>
 
         <div class="right">
-            <div class="icon"><img src="images/phone.png" width="18px"></div>
-            <div>555-123-4567</div>
+            <div class="telephone"><img src="images/phone.png"></div>
+            <div class="telephone">555-123-4567</div>
             <div><button>Contact</button></div>
-            <div class="humburger"><img src="images/humburger.png" width="18px"></div>
+            <div class="humburger"><img src="images/humburger.png"></div>
         </div>
     </div>
 </body>
