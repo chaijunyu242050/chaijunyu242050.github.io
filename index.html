@@ -12,17 +12,11 @@
             margin: 0;
             padding: 0;
             font-family: "VT323", monospace;
-            background: #1e293b;
-            display: flex;
-            justify-content: center;
-            padding: 40px 20px;
         }
 
         div.container {
-            max-width: 1024px;
             width: 100%;
-            overflow: hidden;
-            border-radius: 10px;
+            min-height: 100vh;
             background-image: url(images/background.png);
             background-size: cover;
             background-position: center;
@@ -36,9 +30,10 @@
             padding: 18px 35px;
         }
 
-        div.logo {
-            font-size: 28px;
-            font-weight: 700;
+        div.logo img {
+            width: 75px;
+            height: auto;
+            display: block;
         }
 
         .social {
@@ -48,8 +43,8 @@
         }
 
         .social img {
-            width: 24px;
-            height: 24px;
+            width: 36px;
+            height: 36px;
             object-fit: contain;
         }
 
@@ -57,7 +52,6 @@
             color: white;
             margin-left: 15px;
             font-size: 20px;
-            transition: .3s;
         }
 
         div.hero {
@@ -66,15 +60,15 @@
         }
 
         div.hero img {
-            width: 140px;
-            height: 140px;
+            width: 250px;
+            height: 250px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 20px;
         }
 
         div.hero h1 {
-            font-size: 36px;
+            font-size: 45px;
             margin-bottom: 8px;
             color: white;
         }
@@ -82,6 +76,7 @@
         div.hero h3 {
             color: #FE7F2D;
             margin-bottom: 20px;
+            font-size: 25px;
         }
 
         div.hero p {
@@ -89,6 +84,7 @@
             margin: auto;
             line-height: 1.8;
             color: white;
+            font-size: 25px;
         }
 
         div.exercise {
@@ -96,7 +92,7 @@
             grid-template-columns: repeat(3, 1fr);
             gap: 25px;
             padding: 30px;
-            opacity: 0.8;
+            opacity: 0.7;
         }
 
         div.card {
@@ -111,6 +107,13 @@
             margin-bottom: 15px;
             border-bottom: 1px solid #999;
             padding-bottom: 10px;
+        }
+
+        div.card h2 img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            vertical-align: middle;
         }
 
         div.card a {
@@ -132,12 +135,16 @@
         }
 
         div.footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
             margin-bottom: 15px;
         }
 
         .footer-social img {
-            width: 24px;
-            height: 24px;
+            width: 36px;
+            height: 36px;
             object-fit: contain;
         }
 
@@ -145,6 +152,82 @@
             color: white;
             margin: 0 12px;
             font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            div.hero img {
+                width: 180px;
+                height: 180px;
+            }
+
+            div.hero h1 {
+                font-size: 36px;
+            }
+
+            div.hero h3 {
+                font-size: 22px;
+            }
+
+            div.hero p {
+                font-size: 22px;
+            }
+
+            div.exercise {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            div.full {
+                grid-column: auto;
+            }
+        }
+
+        @media screen and (max-width: 501px) {
+            div.header {
+                padding: 15px 20px;
+            }
+
+            .logo img {
+                width: 60px;
+            }
+
+            .social img {
+                width: 28px;
+                height: 28px;
+            }
+
+            div.hero img {
+                width: 140px;
+                height: 140px;
+            }
+
+            div.hero h1 {
+                font-size: 32px;
+            }
+
+            div.hero h3 {
+                font-size: 20px;
+            }
+
+            div.hero p {
+                font-size: 18px;
+            }
+
+            div.exercise {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .footer-social img {
+                width: 28px;
+                height: 28px;
+            }
         }
     </style>
 </head>
@@ -155,13 +238,13 @@
         <div class="header">
             <div class="logo"><img src="images/lo1.png"></div>
             <div class="social">
-                <div><a href="https://www.facebook.com/cai.jun.yu.188013">
+                <div><a href="https://www.facebook.com/cai.jun.yu.188013" target="_blank">
                         <img src="images/facebook.png">
                     </a></div>
-                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4">
+                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4" target="_blank">
                         <img src="images/instagram.png">
                     </a></div>
-                <div><a href="https://github.com/chaijunyu242050">
+                <div><a href="https://github.com/chaijunyu242050" target="_blank">
                         <img src="images/github.png">
                     </a></div>
             </div>
@@ -188,60 +271,65 @@
             <div class="card">
                 <div>
                     <h2>
+                        <img src="images/check.png">
                         Week 1
                     </h2>
                 </div>
-                <div><a href="http://127.0.0.1:5500/week1/exe1.html">exe1.html</a></div>
-                <div><a href="http://127.0.0.1:5500/week1/exe2.html">exe2.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week1/exe1.html" target="_blank">exe1.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week1/exe2.html" target="_blank">exe2.html</a></div>
             </div>
             <div class="card">
                 <div>
                     <h2>
+                        <img src="images/check.png">
                         Week 2
                     </h2>
                 </div>
-                <div><a href="http://127.0.0.1:5500/week2/button.html">button.html</a></div>
-                <div><a href="http://127.0.0.1:5500/week2/self-intro.html">self-intro.html</a></div>
-                <div><a href="http://127.0.0.1:5500/week2/artist.html">artist.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week2/button.html" target="_blank">button.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week2/self-intro.html" target="_blank">self-intro.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week2/artist.html" target="_blank">artist.html</a></div>
             </div>
             <div class="card">
                 <div>
                     <h2>
+                        <img src="images/check.png">
                         Week 3
                     </h2>
                 </div>
-                <div><a href="http://127.0.0.1:5500/week3/flexbox1.html">flexbox1.html</a></div>
-                <div><a href="http://127.0.0.1:5500/week3/flexbox2.html">flexbox2.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week3/flexbox1.html" target="_blank">flexbox1.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week3/flexbox2.html" target="_blank">flexbox2.html</a></div>
             </div>
             <div class="card full">
                 <div>
                     <h2>
+                        <img src="images/check.png">
                         Week 4
                     </h2>
                 </div>
-                <div><a href="http://127.0.0.1:5500/week4/menu.html">menu.html</a></div>
-                <div><a href="http://127.0.0.1:5500/week4/home.html">home.html</a></div>
-                <div><a href="http://127.0.0.1:5500/index.html">index.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week4/menu.html" target="_blank">menu.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week4/home.html" target="_blank">home.html</a></div>
+                <div><a href="http://127.0.0.1:5500/index.html" target="_blank">index.html</a></div>
             </div>
         </div>
 
         <div class="footer">
             <div class="footer-social">
-                <div><a href="https://www.facebook.com/cai.jun.yu.188013">
+                <div><a href="https://www.facebook.com/cai.jun.yu.188013" target="_blank">
                         <img src="images/facebook.png">
                     </a></div>
-                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4">
+                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4" target="_blank">
                         <img src="images/instagram.png">
                     </a></div>
-                <div><a href="https://github.com/chaijunyu242050">
+                <div><a href="https://github.com/chaijunyu242050" target="_blank">
                         <img src="images/github.png">
                     </a></div>
-                <div>
-                    <p>
-                        © 2026 Chai Jun Yu. All Rights Reserved.
-                    </p>
-                </div>
             </div>
+            <div>
+                <p>
+                    © 2026 Chai Jun Yu. All Rights Reserved.
+                </p>
+            </div>
+
         </div>
     </div>
 </body>
