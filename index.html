@@ -5,16 +5,245 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercise 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "VT323", monospace;
+            background: #1e293b;
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+        }
+
+        div.container {
+            max-width: 1024px;
+            width: 100%;
+            overflow: hidden;
+            border-radius: 10px;
+            background-image: url(images/background.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        div.header {
+            background: #233D4D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 35px;
+        }
+
+        div.logo {
+            font-size: 28px;
+            font-weight: 700;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        div.social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+            transition: .3s;
+        }
+
+        div.hero {
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        div.hero img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        div.hero h1 {
+            font-size: 36px;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        div.hero h3 {
+            color: #FE7F2D;
+            margin-bottom: 20px;
+        }
+
+        div.hero p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: white;
+        }
+
+        div.exercise {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 30px;
+            opacity: 0.8;
+        }
+
+        div.card {
+            background: #EAECF0;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        div.card h2 {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 10px;
+        }
+
+        div.card a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 12px 0;
+        }
+
+        div.full {
+            grid-column: 1/4;
+        }
+
+        div.footer {
+            background: #233D4D;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        div.footer-social {
+            margin-bottom: 15px;
+        }
+
+        .footer-social img {
+            width: 24px;
+            height: 24px;
+            object-fit: contain;
+        }
+
+        div.footer-social a {
+            color: white;
+            margin: 0 12px;
+            font-size: 20px;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello There</h1>
-    <h4>My Name Is Chai Jun Yu</h4>
-    <h6>Welcome to My Website</h6>
-    <button>Hello</button><br>
-    <button>GoodBye</button>
-    <p>SFJIFHUSDHFHFAHFUIHFFJHFHFAHFUIIDFUAHFUIEHS</p>
-    <p>SFJIFHUSDHFHFAHFUIHFFJHFHFAHFUIIDFUAHFUIEHS</p>
+    <div class="container">
+
+        <div class="header">
+            <div class="logo"><img src="images/lo1.png"></div>
+            <div class="social">
+                <div><a href="https://www.facebook.com/cai.jun.yu.188013">
+                        <img src="images/facebook.png">
+                    </a></div>
+                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4">
+                        <img src="images/instagram.png">
+                    </a></div>
+                <div><a href="https://github.com/chaijunyu242050">
+                        <img src="images/github.png">
+                    </a></div>
+            </div>
+        </div>
+
+        <div class="hero">
+            <div><img src="images/profile.jpg"></div>
+            <div>
+                <h1>Chai Jun Yu</h1>
+            </div>
+            <div>
+                <h3>Web Publishing</h3>
+            </div>
+            <div>
+                <p>
+                    Hello! I'm Chai Jun Yu, a student who enjoys web design,
+                    UI/UX and front-end development.
+                    Welcome to my personal exercise page!
+                </p>
+            </div>
+        </div>
+
+        <div class="exercise">
+            <div class="card">
+                <div>
+                    <h2>
+                        Week 1
+                    </h2>
+                </div>
+                <div><a href="http://127.0.0.1:5500/week1/exe1.html">exe1.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week1/exe2.html">exe2.html</a></div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>
+                        Week 2
+                    </h2>
+                </div>
+                <div><a href="http://127.0.0.1:5500/week2/button.html">button.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week2/self-intro.html">self-intro.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week2/artist.html">artist.html</a></div>
+            </div>
+            <div class="card">
+                <div>
+                    <h2>
+                        Week 3
+                    </h2>
+                </div>
+                <div><a href="http://127.0.0.1:5500/week3/flexbox1.html">flexbox1.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week3/flexbox2.html">flexbox2.html</a></div>
+            </div>
+            <div class="card full">
+                <div>
+                    <h2>
+                        Week 4
+                    </h2>
+                </div>
+                <div><a href="http://127.0.0.1:5500/week4/menu.html">menu.html</a></div>
+                <div><a href="http://127.0.0.1:5500/week4/home.html">home.html</a></div>
+                <div><a href="http://127.0.0.1:5500/index.html">index.html</a></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-social">
+                <div><a href="https://www.facebook.com/cai.jun.yu.188013">
+                        <img src="images/facebook.png">
+                    </a></div>
+                <div><a href="https://www.instagram.com/xierixieyue?igsh=dTlocW8zdTRwOWp4">
+                        <img src="images/instagram.png">
+                    </a></div>
+                <div><a href="https://github.com/chaijunyu242050">
+                        <img src="images/github.png">
+                    </a></div>
+                <div>
+                    <p>
+                        © 2026 Chai Jun Yu. All Rights Reserved.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
