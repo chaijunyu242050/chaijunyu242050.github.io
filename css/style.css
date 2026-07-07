@@ -1,0 +1,223 @@
+        @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: "VT323", monospace;
+        }
+
+        div.container {
+            width: 100%;
+            min-height: 100vh;
+            background-image: url(../images/background.png);
+            background-size: cover;
+            background-position: center;
+        }
+
+        div.header {
+            background: #233D4D;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 18px 35px;
+        }
+
+        div.logo img {
+            width: 75px;
+            height: auto;
+            display: block;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .social img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+        }
+
+        div.social a {
+            color: white;
+            margin-left: 15px;
+            font-size: 20px;
+        }
+
+        div.hero {
+            text-align: center;
+            padding: 40px 30px;
+        }
+
+        div.hero img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        div.hero h1 {
+            font-size: 45px;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        div.hero h3 {
+            color: #FE7F2D;
+            margin-bottom: 20px;
+            font-size: 25px;
+        }
+
+        div.hero p {
+            max-width: 700px;
+            margin: auto;
+            line-height: 1.8;
+            color: white;
+            font-size: 25px;
+        }
+
+        div.exercise {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            padding: 30px;
+            opacity: 0.7;
+        }
+
+        div.card {
+            background: #EAECF0;
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 25px;
+            text-align: center;
+        }
+
+        div.card h2 {
+            margin-bottom: 15px;
+            border-bottom: 1px solid #999;
+            padding-bottom: 10px;
+        }
+
+        div.card h2 img {
+            width: 30px;
+            height: 30px;
+            margin-right: 8px;
+            vertical-align: middle;
+        }
+
+        div.card a {
+            display: block;
+            color: #333;
+            text-decoration: none;
+            margin: 12px 0;
+        }
+
+        div.full {
+            grid-column: 1/4;
+        }
+
+        div.footer {
+            background: #233D4D;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+
+        div.footer-social {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+
+        .footer-social img {
+            width: 36px;
+            height: 36px;
+            object-fit: contain;
+        }
+
+        div.footer-social a {
+            color: white;
+            margin: 0 12px;
+            font-size: 20px;
+        }
+
+        @media screen and (max-width: 768px) {
+            div.header {
+                flex-direction: column;
+                gap: 20px;
+                text-align: center;
+            }
+
+            div.hero img {
+                width: 180px;
+                height: 180px;
+            }
+
+            div.hero h1 {
+                font-size: 36px;
+            }
+
+            div.hero h3 {
+                font-size: 22px;
+            }
+
+            div.hero p {
+                font-size: 22px;
+            }
+
+            div.exercise {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            div.full {
+                grid-column: auto;
+            }
+        }
+
+        @media screen and (max-width: 501px) {
+            div.header {
+                padding: 15px 20px;
+            }
+
+            .logo img {
+                width: 60px;
+            }
+
+            .social img {
+                width: 28px;
+                height: 28px;
+            }
+
+            div.hero img {
+                width: 140px;
+                height: 140px;
+            }
+
+            div.hero h1 {
+                font-size: 32px;
+            }
+
+            div.hero h3 {
+                font-size: 20px;
+            }
+
+            div.hero p {
+                font-size: 18px;
+            }
+
+            div.exercise {
+                grid-template-columns: 1fr;
+                padding: 20px;
+                gap: 20px;
+            }
+
+            .footer-social img {
+                width: 28px;
+                height: 28px;
+            }
+        }

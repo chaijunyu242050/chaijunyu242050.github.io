@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #main div {
+            width: calc(100% / 4 - 7.5px);
+            padding: 30px;
+            border: 2px solid black;
+            background: lightpink;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+        <div>A</div>
+        <div>B</div>
+        <div>C</div>
+    </div>
+</body>
+
+</html>
