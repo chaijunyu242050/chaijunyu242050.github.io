@@ -18,3 +18,490 @@ div.container {
     margin: 0 auto;
     padding: 40px 20px 80px;
 }
+
+div.casestudies {
+    width: 1200px;
+    margin: 120px auto;
+}
+
+div.title {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+div.title h2 {
+    background: #B9FF66;
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+div.title p {
+    width: 560px;
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+div.cscontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #191A23;
+    border-radius: 40px;
+    padding: 60px;
+}
+
+div.casecard {
+    flex: 1;
+}
+
+div.casecard p {
+    color: white;
+    font-size: 18px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+}
+
+div.caselearn p {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #B9FF66;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+div.casecard img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+div.line {
+    width: 1px;
+    height: 200px;
+    background: #fff;
+    margin: 0 40px;
+}
+
+div.wp {
+    width: 1200px;
+    margin: 120px auto;
+}
+
+div.wpcontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+div.wpcard {
+    background: #F3F3F3;
+    border: 2px solid #191A23;
+    border-radius: 40px;
+    padding: 40px 50px;
+    box-shadow: 0 6px 0 #191A23;
+}
+
+div.wpcard.active {
+    background: #B9FF66;
+}
+
+div.wpheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.left {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+div.number p {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+div.left h3 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+div.wpheader button {
+    width: 58px;
+    height: 58px;
+    border: 2px solid #191A23;
+    border-radius: 50%;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1;
+}
+
+div.wpcard hr {
+    margin: 35px 0;
+    border: none;
+    border-top: 2px solid #191A23;
+}
+
+div.wpcard>p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #191A23;
+}
+
+div.team {
+    width: 1200px;
+    margin: 120px auto;
+}
+
+div.teamcontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+}
+
+div.teamcard {
+    background: #fff;
+    border: 2px solid #191A23;
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 6px 0 #191A23;
+}
+
+div.mtop {
+    display: flex;
+    align-items: flex-start;
+    position: relative;
+}
+
+div.profile {
+    width: 95px;
+    height: 95px;
+    object-fit: cover;
+}
+
+div.minfo {
+    margin-left: 18px;
+    align-self: flex-end;
+}
+
+div.minfo h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+div.minfo p {
+    margin-top: 5px;
+    font-size: 16px;
+    margin: 4px 0 0;
+}
+
+div.in {
+    width: 34px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div.teamcard hr {
+    margin: 28px 0;
+    border: none;
+    border-top: 1.5px solid #191A23;
+}
+
+div.teamcard>p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+div.syt {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 45px;
+}
+
+div.syt button {
+    background: #191A23;
+    color: white;
+    border: none;
+    padding: 22px 70px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+@media (max-width:1300px) {
+
+    div.casestudies div.wp,
+    div.team {
+        width: 92%;
+        margin: 100px auto;
+    }
+
+    .title {
+        gap: 30px;
+    }
+
+    .title h2 {
+        font-size: 34px;
+    }
+
+    .title p {
+        width: auto;
+        font-size: 17px;
+    }
+
+    div.casestudies {
+        width: 92%;
+        margin: 100px auto;
+    }
+
+    div.wp {
+        width: 92%;
+        margin: 100px auto;
+    }
+
+    div.team {
+        width: 92%;
+        margin: 100px auto;
+    }
+
+    .teamcontainer {
+        gap: 25px;
+    }
+
+    .teamcard {
+        padding: 28px;
+    }
+
+    .left h3 {
+        font-size: 26px;
+    }
+
+    .number p {
+        font-size: 52px;
+    }
+}
+
+@media (max-width:1050px) {
+
+    div.title {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    div.title h2 {
+        font-size: 30px;
+    }
+
+    div.title p {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    div.casestudies {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    div.cscontainer {
+        padding: 40px;
+    }
+
+    div.line {
+        margin: 0 20px;
+    }
+
+    div.casecard p {
+        font-size: 16px;
+    }
+
+    div.caselearn p {
+        font-size: 18px;
+    }
+
+    div.wp {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    div.wpcard {
+        padding: 30px;
+    }
+
+    div.number p {
+        font-size: 48px;
+    }
+
+    div.left h3 {
+        font-size: 24px;
+    }
+
+    div.wpheader button {
+        width: 52px;
+        height: 52px;
+        font-size: 36px;
+    }
+
+    div.team {
+        width: 90%;
+        margin: 80px auto;
+    }
+
+    div.teamcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+    div.teamcard {
+        padding: 28px;
+    }
+}
+
+@media (max-width:730px) {
+    div.title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        margin-bottom: 35px;
+    }
+
+    div.title h2 {
+        display: inline-block
+    }
+
+    div.title p {
+        width: 100%;
+        margin: 0;
+    }
+
+    div.casestudies {
+        width: 92%;
+        margin: 60px auto;
+    }
+
+    div.cscontainer {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    div.line {
+        width: 100%;
+        height: 1px;
+        background: #f3f3f3;
+        margin: 0;
+    }
+
+    div.casecard {
+        width: 100%;
+    }
+
+    div.casecard p {
+        font-size: 15px;
+    }
+
+    div.caselearn p {
+        font-size: 16px;
+    }
+
+    div.wp {
+        width: 92%;
+        margin: 60px auto;
+    }
+
+    div.wpcard {
+        padding: 20px;
+        border-radius: 50px;
+    }
+
+    div.left {
+        gap: 12px;
+    }
+
+    div.number p {
+        font-size: 24px;
+    }
+
+    div.left h3 {
+        font-size: 14px;
+    }
+
+    div.wpheader button {
+        width: 36px;
+        height: 36px;
+        font-size: 24px;
+    }
+
+    div.wpcard p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    div.team {
+        width: 92%;
+        margin: 60px auto;
+    }
+
+    div.teamcontainer {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    div.teamcard {
+        padding: 20px;
+    }
+
+    div.teamcard.small {
+        display: none;
+    }
+
+    div.profile {
+        width: 70px;
+        height: 70px;
+    }
+
+    div.minfo h3 {
+        font-size: 18px;
+    }
+
+    div.minfo p {
+        font-size: 14px;
+    }
+
+    div.teamcard>p {
+        font-size: 14px;
+    }
+
+    div.in {
+        width: 28px;
+    }
+
+    div.syt {
+        justify-content: center;
+    }
+
+    div.syt button {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+}
