@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #191A23
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+div.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 40px 20px 80px;
+}
+
+div.up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.logo img {
+    width: 220px;
+    display: block;
+}
+
+div.choice {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+div.choice p {
+    margin: 0;
+}
+
+div.choice button {
+    border: 1px solid #191A23;
+    border-radius: 14px;
+    background: white;
+    font-size: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    width: 231px;
+    height: 68px;
+}
+
+div.humburger {
+    width: 32px;
+    height: auto;
+    max-width: none;
+    display: none;
+}
+
+div.humburger img {
+    width: 32px;
+    height: 32px;
+    display: block;
+}
+
+div.under {
+    background: #191A23;
+    border-radius: 40px 40px 0 0;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: calc(100% - 40px);
+    max-width: 1240px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-sizing: border-box;
+    padding: 50px 60px;
+}
+
+div.underup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.underlogo img {
+    width: 180px;
+}
+
+div.underchoice {
+    display: flex;
+    gap: 35px;
+}
+
+div.underchoice p {
+    color: white;
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+div.undersocial {
+    display: flex;
+    gap: 15px;
+}
+
+div.undersocial img {
+    width: 32px;
+    height: 32px;
+}
+
+div.undersocial.big {
+    display: flex;
+}
+
+div.undersocial.small {
+    display: none;
+}
+
+div.undermiddle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+
+div.underleft h3 {
+    background: #B9FF66;
+    color: #191A23;
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+
+div.underleft p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+div.underright {
+    background: #292A32;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+div.underright p {
+    width: 280px;
+    height: 55px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    flex: 1;
+    max-width: 280px;
+    box-sizing: border-box;
+}
+
+div.underright button {
+    width: 220px;
+    height: 55px;
+    background: #B9FF66;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+div.underdown {
+    border-top: 1px solid white;
+    margin-top: 40px;
+    padding-top: 30px;
+    display: flex;
+    gap: 40px;
+}
+
+div.underdown p {
+    color: white;
+}
+
+div.underline {
+    text-decoration: underline;
+}
+
+@media screen and (max-width:1050px) {
+    div.up {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    div.choice {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.under {
+        padding: 40px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    div.underup {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    div.underchoice {
+        gap: 25px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    div.undersocial {
+        justify-content: center;
+    }
+
+    div.undermiddle {
+        flex-direction: column;
+        gap: 35px;
+        align-items: stretch;
+    }
+
+    div.underleft {
+        text-align: center;
+    }
+
+    div.underright {
+        width: 100%;
+        padding: 35px;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    div.underright p {
+        width: 550px;
+        max-width: none;
+    }
+
+
+    div.underright button {
+        width: 550px;
+    }
+
+    div.underdown {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:730px) {
+    div.up {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    div.up img {
+        width: 180px;
+    }
+
+    div.choice {
+        display: none;
+    }
+
+    div.humburger {
+        display: flex;
+    }
+
+    div.under {
+        position: relative;
+        width: 100%;
+        left: 0;
+        transform: none;
+        padding: 40px 20px;
+        border-radius: 30px 30px 0 0;
+    }
+
+    div.underup {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    div.underlogo img {
+        width: 150px;
+        margin: auto;
+    }
+
+    div.underchoice {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+    }
+
+    div.underchoice p {
+        margin: 0;
+        text-decoration: none;
+    }
+
+    div.hide {
+        display: none;
+    }
+
+    div.undersocial {
+        justify-content: center;
+        order: 3;
+    }
+
+    div.undersocial.big {
+        display: none;
+    }
+
+    div.undersocial.small {
+        display: flex;
+        margin-top: 40px;
+    }
+
+    div.undermiddle {
+        margin-top: 35px;
+        flex-direction: column;
+        gap: 35px;
+    }
+
+    div.underleft {
+        text-align: center;
+    }
+
+    div.underleft h3 {
+        display: inline-block;
+    }
+
+    div.underleft p {
+        font-size: 15px;
+    }
+
+    div.underright {
+        width: 100%;
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    div.underright p {
+        width: 400px;
+        max-width: none;
+    }
+
+    div.underright button {
+        width: 400px;
+        height: 55px;
+    }
+
+    div.underdown {
+        margin-top: 35px;
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        text-align: center;
+    }
+
+    div.underdown p {
+        margin: 0;
+        font-size: 15px;
+    }
+}
