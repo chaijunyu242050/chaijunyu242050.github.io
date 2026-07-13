@@ -190,6 +190,10 @@ div.underline {
 }
 
 @media screen and (max-width:1050px) {
+    div.container {
+        max-width: 1000px;
+    }
+
     div.up {
         flex-direction: column;
         gap: 30px;
@@ -258,6 +262,11 @@ div.underline {
 }
 
 @media screen and (max-width:730px) {
+    div.container {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
     div.up {
         flex-direction: row;
         justify-content: space-between;
