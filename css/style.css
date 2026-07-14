@@ -81,7 +81,7 @@
 
         div.exercise {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(4, 1fr);
             gap: 25px;
             padding: 30px;
             opacity: 0.7;
@@ -115,12 +115,8 @@
             margin: 12px 0;
         }
 
-        div.half {
-            grid-template-columns: repeat(3, 1fr);
-        }
-
         div.full {
-            grid-column: 1/4;
+            grid-column: 1/5;
         }
 
         div.footer {
