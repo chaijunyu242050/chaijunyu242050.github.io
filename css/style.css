@@ -115,6 +115,10 @@
             margin: 12px 0;
         }
 
+        div.half {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
         div.full {
             grid-column: 1/4;
         }
