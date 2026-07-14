@@ -1,10 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+:root {
+    --first: #B9FF66;
+    --second: #F3F3F3;
+    --third: #191A23;
+    --font: "Space Grotesk", sans-serif;
+}
+
 body {
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font);
     margin: 0;
     padding: 0;
-    color: #191A23
+    color: var(--third);
 }
 
 img {
@@ -49,11 +56,11 @@ div.choice {
 }
 
 div.choice button {
-    border: 1px solid #191A23;
+    border: 1px solid var(--third);
     border-radius: 14px;
     background: white;
     font-size: 20px;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font);
     width: 231px;
     height: 68px;
 }
@@ -92,12 +99,12 @@ div.middleleft p {
 div.middleleft button {
     width: 264px;
     height: 68px;
-    background: #191A23;
+    background: var(--third);
     color: white;
     border: none;
     border-radius: 14px;
     font-size: 20px;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font);
 }
 
 div.middleright {
@@ -134,7 +141,7 @@ div.service {
 }
 
 div.service h2 {
-    background: #B9FF66;
+    background: var(--first);
     padding: 1px 10px;
     border-radius: 7px;
     font-size: 40px;
@@ -156,8 +163,8 @@ div.room {
 
 div.card {
     min-height: 310px;
-    border: 1px solid #191A23;
-    border-bottom: 6px solid #191A23;
+    border: 1px solid var(--third);
+    border-bottom: 6px solid var(--third);
     border-radius: 45px;
     padding: 4px 40px;
     display: flex;
@@ -166,15 +173,15 @@ div.card {
 }
 
 div.card.white {
-    background: #F3F3F3;
+    background: var(--second);
 }
 
 div.card.green {
-    background: #B9FF66;
+    background: var(--first);
 }
 
 div.card.dark {
-    background: #191A23;
+    background: var(--third);
 }
 
 div.card .left {
@@ -197,15 +204,15 @@ div.card h3 {
 }
 
 div.card.white h3 {
-    color: #191A23;
+    color: var(--third);
 }
 
 div.card.green h3 {
-    color: #191A23;
+    color: var(--third);
 }
 
 div.card.dark h3 {
-    color: #f3f3f3;
+    color: var(--second);
 }
 
 div.card p {
@@ -213,15 +220,15 @@ div.card p {
 }
 
 div.card.white p {
-    color: #191A23;
+    color: var(--third);
 }
 
 div.card.green p {
-    color: #191A23;
+    color: var(--third);
 }
 
 div.card.dark p {
-    color: #f3f3f3;
+    color: var(--second);
 }
 
 div.card .right img {
@@ -238,7 +245,7 @@ div.card .learn {
 
 div.ground {
     max-width: 100%;
-    background: #F3F3F3;
+    background: var(--second);
     border-radius: 45px;
     padding: 50px 0;
     display: flex;
@@ -258,26 +265,26 @@ div.groundleft h2 {
     font-size: 30px;
     font-weight: 500;
     line-height: 1.2;
-    color: #191A23;
+    color: var(--third);
     margin-bottom: 28px;
 }
 
 div.groundleft p {
     font-size: 18px;
     line-height: 1.3;
-    color: #191A23;
+    color: var(--third);
     margin-bottom: 25px;
 }
 
 div.groundleft button {
     width: 290px;
     height: 68px;
-    background: #191A23;
-    color: #f3f3f3;
+    background: var(--third);
+    color: var(--second);
     border: none;
     border-radius: 14px;
     font-size: 20px;
-    font-family: "Space Grotesk", sans-serif;
+    font-family: var(--font);
 }
 
 div.groundright {
@@ -314,20 +321,20 @@ div.card h3 {
 }
 
 div.card.white h3 {
-    background: #B9FF66;
+    background: var(--first);
 }
 
 div.card.green h3 {
-    background: #f3f3f3;
+    background: var(--second);
 }
 
 div.card.dark h3 {
-    background: #B9FF66;
-    color: #191A23;
+    background: var(--first);
+    color: var(--third);
 }
 
 div.card .white h3 {
-    background: #f3f3f3;
+    background: var(--second);
 }
 
 div.middle {

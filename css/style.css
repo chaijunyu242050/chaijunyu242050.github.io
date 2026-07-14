@@ -1,9 +1,17 @@
         @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+        :root {
+            --primary: #FE7F2D;
+            --secondary: #EAECF0;
+            --background: #233D4D;
+            --font: "VT323", monospace;
+        }
+
         body {
             margin: 0;
             padding: 0;
-            font-family: "VT323", monospace;
+            font-family: var(--font);
+            color: white;
         }
 
         div.container {
@@ -15,7 +23,7 @@
         }
 
         div.header {
-            background: #233D4D;
+            background: var(--background);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -41,7 +49,6 @@
         }
 
         div.social a {
-            color: white;
             margin-left: 15px;
             font-size: 20px;
         }
@@ -62,11 +69,10 @@
         div.hero h1 {
             font-size: 45px;
             margin-bottom: 8px;
-            color: white;
         }
 
         div.hero h3 {
-            color: #FE7F2D;
+            color: var(--primary);
             margin-bottom: 20px;
             font-size: 25px;
         }
@@ -75,7 +81,6 @@
             max-width: 700px;
             margin: auto;
             line-height: 1.8;
-            color: white;
             font-size: 25px;
         }
 
@@ -88,7 +93,7 @@
         }
 
         div.card {
-            background: #EAECF0;
+            background: var(--secondary);
             backdrop-filter: blur(10px);
             border-radius: 15px;
             padding: 25px;
@@ -97,8 +102,9 @@
 
         div.card h2 {
             margin-bottom: 15px;
-            border-bottom: 1px solid #999;
+            border-bottom: 1px solid gray;
             padding-bottom: 10px;
+            color: black;
         }
 
         div.card h2 img {
@@ -110,7 +116,7 @@
 
         div.card a {
             display: block;
-            color: #333;
+            color: black;
             text-decoration: none;
             margin: 12px 0;
         }
@@ -120,8 +126,7 @@
         }
 
         div.footer {
-            background: #233D4D;
-            color: white;
+            background: var(--background);
             text-align: center;
             padding: 25px;
         }
@@ -141,7 +146,6 @@
         }
 
         div.footer-social a {
-            color: white;
             margin: 0 12px;
             font-size: 20px;
         }
